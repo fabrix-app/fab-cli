@@ -7,9 +7,9 @@ export const app = [
     name: 'webserver',
     message: 'Do you want to include a webserver?',
     choices: [
-      "Express",
-      "Hapi",
-      "No"
+      'Express',
+      'Hapi',
+      'No'
     ]
   },
   {
@@ -17,9 +17,9 @@ export const app = [
     name: 'orm',
     message: 'Do you want to include one or more ORMs?',
     choices: [
-      "Sequelize",
-      "Knex",
-      "No"
+      'Sequelize',
+      'Knex',
+      'No'
     ]
   },
   {
@@ -27,8 +27,8 @@ export const app = [
     name: 'tapestries',
     message: 'Do you want to use Tapestries?',
     choices: [
-      "n",
-      "Y"
+      'n',
+      'Y'
     ]
   }
 ]
