@@ -3,6 +3,7 @@
 import * as program from 'commander'
 import { prompt } from 'inquirer'
 import * as questions from './questions'
+import * as generators from './generators'
 
 /**
  * Get Basic Information about the CLI
@@ -21,7 +22,10 @@ program
   .action(name => {
     prompt(questions.app)
       .then(answers => {
-        console.log('Not yet Implemented', name, answers)
+        return generators.app(name, answers)
+      })
+      .then(result => {
+        console.log('Not yet Implemented', result)
       })
   })
 

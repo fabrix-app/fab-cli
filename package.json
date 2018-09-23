@@ -41,9 +41,16 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@fabrix/fabrix": "^1.5.5",
+    "colors": "^1.2.1",
     "commander": "^2.18.0",
+    "cp": "^0.2.0",
     "inquirer": "^6.2.0",
     "jju": "^1.4.0",
+    "lodash": "^4.17.11",
+    "mkdirp": "^0.5.1",
+    "node-cmd": "^3.0.0",
+    "path-exists": "^3.0.0",
     "semver": "^4.3.6",
     "semver-set": "^0.1.1"
   },

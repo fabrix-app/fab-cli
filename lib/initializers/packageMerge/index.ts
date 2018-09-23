@@ -38,7 +38,8 @@ function exists(dst, src) {
 function unique(dst, src) {
   if (isEmpty(dst)) {
     return src
-  } else {
+  }
+  else {
     return [].concat(dst, filter(src, function(keyword) {
       return contains(dst, keyword)
     }))
@@ -74,7 +75,7 @@ function combine(dst, src) {
  * @param {String|Buffer|Object} src [description]
  * @returns {String} Result of merging src into dst.
  */
-function merge(dst, src) {
+export const merge = (dst, src) => {
   if (isPlainObject(dst)) {
     dst = JSON.stringify(dst, null, 2)
   }
