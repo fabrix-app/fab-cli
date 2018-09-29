@@ -46,7 +46,7 @@ export const app = (name, answers) => {
     })
     .then(_npm => {
       console.log(colors.grey('\n------------------------------------------------\n'))
-      console.log('\nGenerated! Run ', colors.bgWhite.black(` cd ${name} && npm run build && node dist/server `))
-      console.log('\nRun ', colors.bgWhite.black(` cd ${name} && npm run build && node dist/server `))
+      console.log('\nGenerated!)
+      console.log('\nRun ', colors.bgWhite.black(` cd ${name} && npm run compile && node dist/server `))
     })
 }
