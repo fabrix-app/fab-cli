@@ -39,7 +39,7 @@ function getDir(answers) {
   return dir
 }
 
-export const folderStructure = (name, answers) => {
+export const folderStructure = (name, answers, directory) => {
   // get selected directories
   const dir = getDir(answers)
 

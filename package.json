@@ -1,6 +1,6 @@
 {
   "name": "@fabrix/fab-cli",
-  "version": "1.0.0-alpha.1",
+  "version": "1.5.0",
   "description": "Fabrix CLI",
   "homepage": "https://fabrix.app",
   "author": {
@@ -41,10 +41,11 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@fabrix/fabrix": "^1.5.5",
+    "@fabrix/fabrix": "^1.5.7",
     "colors": "^1.2.1",
     "commander": "^2.18.0",
     "cp": "^0.2.0",
+    "fs-extra": "^7.0.0",
     "inquirer": "^6.2.0",
     "jju": "^1.4.0",
     "lodash": "^4.17.11",

@@ -25,7 +25,7 @@ program
         return generators.app(name, answers)
       })
       .then(result => {
-        console.log('Not yet Implemented', result)
+        return process.exit()
       })
   })
 
