@@ -37,15 +37,15 @@ We love contributions! Please check out our [Contributor's Guide](https://github
 ## License
 [MIT](https://github.com/fabrix-app/fabrix-cli/blob/master/LICENSE)
 
-[npm-image]: https://img.shields.io/npm/v/@fabrix/fabrix-cli.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/@fabrix/fabrix-cli
-[ci-image]: https://img.shields.io/circleci/project/github/fabrix-app/fabrix-cli/master.svg
-[ci-url]: https://circleci.com/gh/fabrix-app/fabrix-cli/tree/master
-[daviddm-image]: http://img.shields.io/david/fabrix-app/fabrix-cli.svg?style=flat-square
-[daviddm-url]: https://david-dm.org/fabrix-app/fabrix-cli
+[npm-image]: https://img.shields.io/npm/v/@fabrix/fab-cli.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@fabrix/fab-cli
+[ci-image]: https://img.shields.io/circleci/project/github/fabrix-app/fab-cli/master.svg
+[ci-url]: https://circleci.com/gh/fabrix-app/fab-cli/tree/master
+[daviddm-image]: http://img.shields.io/david/fabrix-app/fab-cli.svg?style=flat-square
+[daviddm-url]: https://david-dm.org/fabrix-app/fab-cli
 [gitter-image]: http://img.shields.io/badge/+%20GITTER-JOIN%20CHAT%20%E2%86%92-1DCE73.svg?style=flat-square
 [gitter-url]: https://gitter.im/fabrix-app/fabrix
 [twitter-image]: https://img.shields.io/twitter/follow/FabrixApp.svg?style=social
 [twitter-url]: https://twitter.com/FabrixApp
-[coverage-image]: https://img.shields.io/codeclimate/coverage/github/fabrix-app/fabrix.svg?style=flat-square
-[coverage-url]: https://codeclimate.com/github/fabrix-app/fabrix/coverage
+[coverage-image]: https://img.shields.io/codeclimate/coverage/github/fabrix-app/fab-cli.svg?style=flat-square
+[coverage-url]: https://codeclimate.com/github/fabrix-app/fab-cli/coverage
