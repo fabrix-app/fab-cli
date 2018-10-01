@@ -2,14 +2,15 @@ import * as colors from 'colors'
 import { resolve, dirname, } from 'path'
 import { sync } from 'path-exists'
 import { archetype, npmInstall } from '../initializers'
+import { templates } from '../utils/templates'
 
 export const app = (name, answers) => {
   const fabrixArchetype = resolve(__dirname, '../../node_modules/@fabrix/fabrix/archetype')
   const spoolArray = [ ]
 
+  templates.linebreak()
   console.log('\nGenerating app', colors.bgWhite.black(` ${name} `))
-  // console.log('\nfrom', colors.bgWhite.black(` ${answers} `))
-  console.log(colors.grey('\n------------------------------------------------\n'))
+  templates.linebreak()
 
   return Promise.resolve()
     .then(() => {
@@ -18,7 +19,9 @@ export const app = (name, answers) => {
         process.exit(1)
       }
       else {
-        return archetype(name, fabrixArchetype)
+        return archetype(name, fabrixArchetype, {
+          overwrite: false
+        })
       }
     })
     .then(_archetype => {
@@ -45,8 +48,7 @@ export const app = (name, answers) => {
       return npmInstall(name)
     })
     .then(_npm => {
-      console.log(colors.grey('\n------------------------------------------------\n'))
-      console.log('\nGenerated!')
-      console.log('\nRun ', colors.bgWhite.black(` cd ${name} && npm run compile && node dist/server `))
+      templates.appCreated(name)
+      return true
     })
 }

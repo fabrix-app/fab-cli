@@ -4,6 +4,8 @@ import * as program from 'commander'
 import { prompt } from 'inquirer'
 import * as questions from './questions'
 import * as generators from './generators'
+import * as colors from 'colors'
+import { templates } from './utils/templates'
 
 /**
  * Get Basic Information about the CLI
@@ -20,6 +22,10 @@ program
   .alias('a')
   .description('Create new Fabrix App')
   .action(name => {
+
+    console.log(colors.green('Start stitching a new Fabrix Application!\n'))
+    templates.linebreak()
+
     prompt(questions.app)
       .then(answers => {
         return generators.app(name, answers)

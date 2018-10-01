@@ -1,9 +1,9 @@
 import * as cmd from 'node-cmd'
 import * as colors from 'colors'
+import { templates } from '../../utils/templates'
 
 export const npmInstall = (name) => {
-  console.log(colors.grey('\n------------------------------------------------\n'))
-  console.log(colors.dim('Installing npm packages. Please wait.'))
+  templates.npmInstall()
   cmd.run(`cd ${name} && npm install`)
 }
 

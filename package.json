@@ -1,6 +1,6 @@
 {
   "name": "@fabrix/fab-cli",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Fabrix CLI",
   "homepage": "https://fabrix.app",
   "author": {
@@ -41,7 +41,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@fabrix/fabrix": "^1.5.7",
+    "@fabrix/fabrix": "^1.5.8",
     "colors": "^1.2.1",
     "commander": "^2.18.0",
     "cp": "^0.2.0",
@@ -52,7 +52,7 @@
     "mkdirp": "^0.5.1",
     "node-cmd": "^3.0.0",
     "path-exists": "^3.0.0",
-    "semver": "^4.3.6",
+    "semver": "^5.5.1",
     "semver-set": "^0.1.1"
   },
   "devDependencies": {
@@ -60,7 +60,7 @@
     "@types/node": "~10.3.4",
     "mocha": "^5",
     "nyc": "^13.0.1",
-    "supertest": "^2.0.1",
+    "supertest": "^3.3.0",
     "tslib": "~1.9.0",
     "tslint": "~5.10.0",
     "tslint-microsoft-contrib": "~5.0.3",
