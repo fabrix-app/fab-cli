@@ -1,6 +1,6 @@
 # Fabrix CLI
 
-<img src="http://cdn.fabrix.app/art/logos/fabrix-horiz-logo-green.svg" height="96px" title="Fabrix Logo" />
+<img src="https://s3.us-east-2.amazonaws.com/fabrix-app/web/sw-002-1_rect-01-01.png" height="96px" title="Fabrix Logo" />
 
 [![Gitter][gitter-image]][gitter-url]
 [![NPM version][npm-image]][npm-url]
