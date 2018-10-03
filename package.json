@@ -20,10 +20,10 @@
     "spool",
     "fabrix"
   ],
-  "main": "dist/fab.js",
-  "typings": "dist/fab.d.ts",
+  "main": "dist/main.js",
+  "typings": "dist/main.d.ts",
   "bin": {
-    "fab": "./dist/fab.js"
+    "fab": "./dist/main.js"
   },
   "files": [
     "dist"
@@ -42,6 +42,7 @@
   "license": "MIT",
   "dependencies": {
     "@fabrix/fabrix": "^1.5.8",
+    "@orbital/core": "^1.0.0-alpha.30",
     "colors": "^1.2.1",
     "commander": "^2.18.0",
     "cp": "^0.2.0",
