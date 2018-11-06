@@ -6,7 +6,7 @@ export const templates = {
   },
 
   appCreated: (name) => {
-    this.linebreak()
+    templates.linebreak()
     console.log(colors.green(`
 ┌─────────────────────────────────────────────────────────┐
 │        Your Fabrix Application has been created!        │

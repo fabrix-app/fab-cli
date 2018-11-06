@@ -20,6 +20,6 @@ import { SpoolCommand } from './commands/spool.command'
         ResolverCommand,
         ServiceCommand
     ],
-    version: '1.0.0',
+    version: '1.5.2',
 })
 export class FabrixCLI { }
