@@ -3,7 +3,7 @@ import * as colors from 'colors'
 import { prompt } from 'inquirer'
 import * as generators from '../generators'
 import * as questions from '../questions'
-import { templates } from '../utils/templates'
+import { templates } from '../utils'
 
 
 @Command({
