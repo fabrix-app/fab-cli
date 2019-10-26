@@ -1,10 +1,21 @@
 import * as cmd from 'node-cmd'
-import * as colors from 'colors'
-import { templates } from '../../utils/templates'
+import * as PromiseBird from 'bluebird'
+import { templates } from '../../utils'
 
-export const npmInstall = (name) => {
+const runAsync = PromiseBird.promisify(cmd.get, { multiArgs: true, context: cmd })
+
+export const npmInstall = (name, additionalDeps = []) => {
   templates.npmInstall()
-  cmd.run(`cd ${name} && npm install`)
+  return runAsync(`cd ${name} && npm install`).then(() => {
+    const promises = []
+    additionalDeps.forEach(deps => {
+      promises.push(new Promise(function(resolve, reject) {
+        console.log(`installing ${deps}`)
+        runAsync(`cd ${name} && npm install ${deps} --save`).then(() => resolve())
+      }))
+    })
+    return Promise.all(promises)
+  })
 }
 
 export default npmInstall
