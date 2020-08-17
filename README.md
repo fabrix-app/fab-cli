@@ -14,7 +14,7 @@
 Install the Fabrix CLI globally.
 
 ```sh
-$ npm install @fabrix/fabrix-cli -g
+$ npm install @fabrix/fab-cli -g
 ```
 
 ## Usage
