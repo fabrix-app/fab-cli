@@ -61,7 +61,7 @@
   "devDependencies": {
     "@fabrix/lint": "^1.0.0-alpha.4",
     "@types/node": "~12.11.7",
-    "mocha": "^6",
+    "mocha": "^10",
     "nyc": "^14.1.1",
     "standard-version": "^7.0.0",
     "supertest": "^3.4.2",
